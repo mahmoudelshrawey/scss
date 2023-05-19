@@ -4,9 +4,15 @@
   border-bottom: 1px solid #9c9c9c;
 }
 .header .logo {
-  width: 30%;
   display: grid;
   float: left;
+}
+@media (max-width: 769px) {
+  .header .logo {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
 }
 .header .logo h1 {
   margin-bottom: 0;
@@ -17,29 +23,67 @@
   width: 70%;
   background-color: #e2494c;
   border-radius: 16px;
+  margin-left: 7%;
+}
+@media (max-width: 769px) {
+  .header .nav {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
 }
 .header .nav .navbar {
   display: grid;
   list-style: none;
   justify-content: space-around;
 }
+@media (max-width: 769px) {
+  .header .nav .navbar {
+    display: block;
+  }
+}
 .header .nav .navbar li {
   grid-row: 2;
   padding: 10px 6px;
+}
+@media (max-width: 769px) {
+  .header .nav .navbar li {
+    display: block;
+    padding: 17px;
+  }
 }
 .header .nav .navbar li a {
   padding: 30px 6px;
   color: #fff;
   cursor: pointer;
 }
+@media (max-width: 769px) {
+  .header .nav .navbar li a {
+    padding: 17px;
+  }
+}
 .header .nav .navbar li a:hover {
   color: #000;
 }
 
 .contenir {
-  width: 80%;
   margin: auto;
   display: block;
+}
+@media (min-width: 768px) {
+  .contenir {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .contenir {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .contenir {
+    width: 1170px;
+  }
 }
 
 * {
@@ -196,41 +240,41 @@ p {
   color: #ccc;
 }
 .slayder .www {
-  width: 70%;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
   position: relative;
-  height: 130px;
+  height: 270px;
+  width: 500px;
+  /*    @media (min-width:450px) {
+          height: 160px;
+      }
+      @media (min-width:540px) {
+          height: 200px;
+      }
+      @media (min-width:650px) {
+          height: 250px;
+      }
+      @media (min-width:760px) {
+          height: 300px;
+      }*/
 }
-@media (min-width: 450px) {
+@media (min-width: 768px) {
   .slayder .www {
-    height: 160px;
+    width: 500px;
+    height: 280px;
   }
 }
-@media (min-width: 540px) {
+@media (min-width: 992px) {
   .slayder .www {
-    height: 200px;
+    width: 600px;
+    height: 330px;
   }
 }
-@media (min-width: 650px) {
+@media (min-width: 1200px) {
   .slayder .www {
-    height: 250px;
-  }
-}
-@media (min-width: 760px) {
-  .slayder .www {
-    height: 300px;
-  }
-}
-@media (min-width: 1000px) {
-  .slayder .www {
-    height: 360px;
-  }
-}
-@media (min-width: 1500px) {
-  .slayder .www {
-    height: 500px;
+    width: 700px;
+    height: 400px;
   }
 }
 .slayder .www .oo {
@@ -258,13 +302,13 @@ p {
 @media (max-width: 450px) {
   .slayder .www .span {
     font-size: 12px;
-    padding: 4px 9px;
+    padding: 4px 12px;
   }
 }
 @media (max-width: 800px) {
   .slayder .www .span {
     font-size: 20px;
-    padding: 8px 14px;
+    padding: 8px 20px;
   }
 }
 .slayder .www .span:hover {

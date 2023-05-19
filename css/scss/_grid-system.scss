@@ -2,7 +2,15 @@
 @use "./help/mixin" as*;
 @use "./help/function" as *;
 .contenir{
-    width: 80%;
+    @media #{$minphone} {
+        width: 750px;
+    }
+    @media #{$tap} {
+        width: 970px;
+    }
+    @media #{$lap} {
+        width: 1170px;
+    }
     margin: auto;
     display: block;
 
