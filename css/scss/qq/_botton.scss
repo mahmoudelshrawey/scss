@@ -1,0 +1,15 @@
+#st{
+    color: #fff;
+    background-color: #e2494c;
+    border: none;
+    border-radius: 10px;
+    padding:  10px 15px;
+    text-align: center;
+    min-width: 130px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .8;
+    &:hover{
+        opacity: 1;
+    }
+}

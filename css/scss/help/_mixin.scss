@@ -1,0 +1,30 @@
+@use "./ver"as*;
+@mixin minphonep{
+    @media #{$minphone} {
+        @content;
+    }
+}
+@mixin overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+@mixin prefixer($p,$v,$pr :()){
+    @each $prr in $pr{
+        #{'-'+$prr+'-'+$p}:$v
+    }
+    #{$p}:$v
+}
+@mixin fbh($o) {
+    @-webkit-keyframes  #{$o}{
+        @content;
+    };
+    @-moz-keyframes  #{$o}{
+        @content;
+    };
+    @keyframes  #{$o}{
+        @content;
+    };
+}

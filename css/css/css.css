@@ -1,0 +1,40 @@
+p {
+  max-width: 767px;
+  -mo-font-size: 10px;
+  -eg-font-size: 10px;
+  -el-font-size: 10px;
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  p {
+    color: aqua;
+  }
+}
+@media (max-width: 767px) {
+  p {
+    color: aqua;
+  }
+}
+
+@-webkit-keyframes u {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes u {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=css.css.map */

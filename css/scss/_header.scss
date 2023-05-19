@@ -1,0 +1,43 @@
+@use "./help/ver" as*;
+.header{
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom:1px solid $grcolor ;
+    .logo{
+        width: 30%;
+        display: grid;
+        float: $float;
+        h1{
+            margin-bottom:0 ;
+            margin-top: 10px;
+        }
+        p{
+
+        }
+
+    }
+    .nav{
+        float: $float;
+        width: 70%;
+        background-color: $maincolor;
+        border-radius: 16px;
+        .navbar{
+            display: grid;
+            list-style: none;
+            justify-content: space-around;
+            li{
+                grid-row: 2;
+                padding: 10px 6px;
+                a{
+                    padding: 30px 6px;
+                    color: #fff;
+                    cursor: pointer;
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+            
+        }
+    }
+}
