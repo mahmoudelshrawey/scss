@@ -1,0 +1,25 @@
+@use "./help/ver" as*;
+.slkt{
+    background-color: $maincolor;
+    border: #eee;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    cursor:pointer;
+    position: absolute;
+    top: 50px;
+    right: 15%;
+    display: none;
+    @media #{$maxsmall} {
+        display: block;
+    }
+    span{
+        display: inline-block;
+        background-color: #eee;
+        height: 100%;
+        padding: 2px;
+        width: 1px;
+        margin: 0 1px;
+    }
+
+}

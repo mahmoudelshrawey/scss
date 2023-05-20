@@ -5,6 +5,7 @@
 @use "./grid-system" as *;
 @use "./footer" as *;
 @use "./qq/botton"as*;
+@use "./bot"as*;
 p{
     @include minphonep{
         //color: aqua;

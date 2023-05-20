@@ -56,3 +56,10 @@ if(o==ul.length-1){
 if(o==0){
     sp1.style.cssText="opacity: .5"
 }
+let bot = document.querySelector(".slkt")
+let nav = document.querySelector(".nav")
+let navbar = document.querySelector(".navbar")
+bot.addEventListener("click",()=>{
+    navbar.classList.toggle('ooyy')
+    nav.classList.toggle('ooy')
+})

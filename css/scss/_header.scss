@@ -37,8 +37,10 @@
             display: grid;
             list-style: none;
             justify-content: space-around;
+            
             @media #{$maxsmall} {
-                display: block;
+                display: none;
+                height: 0;
             }
             li{
                 grid-row: 2;
@@ -61,5 +63,17 @@
             }
             
         }
+        @media #{$maxsmall} {
+            .ooyy{
+                display: block;
+                height: 260px;
+            }
+        }
+    }
+    @media #{$maxsmall} {
+        .ooy{
+            display: block;
+        }
     }
 }
+
