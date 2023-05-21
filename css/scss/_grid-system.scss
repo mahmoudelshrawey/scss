@@ -32,6 +32,9 @@ body{
         border-radius:15px ;
         padding: 10px 16px;
         z-index: 6;
+        @media #{$maxsmall} {
+            width: 300px;
+        }
         &:before{
             content: '';
             width: 100%;

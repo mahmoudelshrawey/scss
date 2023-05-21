@@ -6,6 +6,7 @@
 @use "./footer" as *;
 @use "./qq/botton"as*;
 @use "./bot"as*;
+@use "./all"as*;
 p{
     @include minphonep{
         //color: aqua;
@@ -163,6 +164,16 @@ p{
         display: grid;
         grid-template-columns: auto auto auto ;
         gap: 1%;
+        @media #{$maxsmall}{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            margin-bottom: 100px;
+            i{
+                position: absolute;
+                display: block;
+                margin-bottom: 12px;
+            }
+        }
         .service-box{
             h3{
                 i{
@@ -189,6 +200,14 @@ p{
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         gap: 1%;
+        @media #{$maxlarge}{
+            grid-template-columns: auto auto auto;
+            padding:0px 20px;
+        }
+        @media #{$maxsmall}{
+            grid-template-columns: auto auto;
+            padding:0px 20px;
+        }
         .pl-box{
             img{
                 width: 100%;
@@ -209,6 +228,9 @@ p{
                 text-decoration: none;
             }
         }
+    }
+    @media #{$maxsmall}{
+        margin-bottom: 130px;
     }
 }
 .ser{

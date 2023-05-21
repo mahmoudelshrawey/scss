@@ -123,6 +123,11 @@ body {
   padding: 10px 16px;
   z-index: 6;
 }
+@media (max-width: 769px) {
+  .head_with_border h2 {
+    width: 300px;
+  }
+}
 .head_with_border h2:before {
   content: "";
   width: 100%;
@@ -227,6 +232,18 @@ body {
   padding: 2px;
   width: 1px;
   margin: 0 1px;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+@media (max-width: 769px) {
+  .test {
+    text-align: center;
+  }
 }
 
 p {
@@ -406,6 +423,18 @@ p {
   grid-template-columns: auto auto auto;
   gap: 1%;
 }
+@media (max-width: 769px) {
+  .ser .rrr {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 100px;
+  }
+  .ser .rrr i {
+    position: absolute;
+    display: block;
+    margin-bottom: 12px;
+  }
+}
 .ser .rrr .service-box h3 i {
   font-size: 30px;
   position: relative;
@@ -427,6 +456,18 @@ p {
   grid-template-columns: auto auto auto auto auto;
   gap: 1%;
 }
+@media (max-width: 991px) {
+  .ser .rrrr {
+    grid-template-columns: auto auto auto;
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 769px) {
+  .ser .rrrr {
+    grid-template-columns: auto auto;
+    padding: 0px 20px;
+  }
+}
 .ser .rrrr .pl-box img {
   width: 100%;
 }
@@ -444,6 +485,11 @@ p {
 .ser .rrrr .pl-box a {
   color: #e2494c;
   text-decoration: none;
+}
+@media (max-width: 769px) {
+  .ser {
+    margin-bottom: 130px;
+  }
 }
 
 .ser .rrrrr {
